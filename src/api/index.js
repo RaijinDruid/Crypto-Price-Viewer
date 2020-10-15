@@ -3,7 +3,7 @@ import axios from "axios";
 import _ from "lodash";
 
 // const binanceUrl = "https://binance.com/api/v3";
-const binanceUrl = "api";
+const binanceUrl = "/api";
 const headers = { "Access-Control-Allow-Origin": "*" };
 const getCandlestickData = async (symbol, interval) => {
   const labelData = (data, labels) => {
