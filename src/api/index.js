@@ -3,7 +3,7 @@ import axios from "axios";
 import _ from "lodash";
 
 const binanceUrl = "https://binance.com/api/v3";
-
+const headers = { "Access-Control-Allow-Origin": "*" };
 const getCandlestickData = async (symbol, interval) => {
   const labelData = (data, labels) => {
     return data.map((item) => {
@@ -13,7 +13,7 @@ const getCandlestickData = async (symbol, interval) => {
       return data;
     });
   };
-  const binanceCandlesticks = await axios.get(`${binanceUrl}/klines?symbol=${symbol}&interval=${interval}&limit=1000`);
+  const binanceCandlesticks = await axios.get(`${binanceUrl}/klines?symbol=${symbol}&interval=${interval}&limit=1000`, { headers: headers });
   const binanceLabels = ["time", "open", "high", "low", "close", "volume", "closeTime", "quote", "noTrades", "base", "asset", "ignore"];
   const labelledData = labelData(binanceCandlesticks.data, binanceLabels);
   return labelledData;

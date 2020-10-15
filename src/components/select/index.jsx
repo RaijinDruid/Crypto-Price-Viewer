@@ -27,7 +27,7 @@ const CustomSelect = ({ options }) => {
           primary25: myTheme.colors.dark1,
           primary: myTheme.colors.secondary,
           primary50: myTheme.colors.dark1,
-          neutral0: myTheme.colors.dark2,
+          neutral0: myTheme.colors.dark3,
           neutral30: myTheme.colors.lightest,
           neutral20: myTheme.colors.lightGrey2,
           neutral40: myTheme.colors.lightGrey2,

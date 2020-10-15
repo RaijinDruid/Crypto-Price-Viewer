@@ -48,7 +48,7 @@ const StyledDropdown = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${(props) => props.theme.colors.dark2};
+    background-color: ${(props) => props.theme.colors.dark3};
     position: absolute;
     z-index: 10;
     top: 40px;
@@ -69,7 +69,7 @@ const StyledDropdown = styled.div`
       }
     }
     &:hover {
-      background-color: ${(props) => props.theme.colors.dark2};
+      background-color: ${(props) => props.theme.colors.dark3};
       border-radius: 3px;
       cursor: pointer;
     }
@@ -77,7 +77,7 @@ const StyledDropdown = styled.div`
       a:hover {
         color: ${(props) => props.theme.colors.lightGrey};
       }
-      background-color: ${(props) => props.theme.colors.dark2};
+      background-color: ${(props) => props.theme.colors.dark3};
     }
     svg {
       color: ${(props) => props.theme.colors.lightest};
